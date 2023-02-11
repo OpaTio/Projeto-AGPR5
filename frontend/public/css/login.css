@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0px;
+}
+
+.main-login {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background: #F8F8F8
+
+}
+
+.left-login {
+  width: 30vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.background-left-login {
+  width: 100vw;
+  height: 100vh;
+}
+/* Right login */
+.right-login {
+  width: 70vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex; 
+}
+
+.card-login {
+  padding: 20px;
+  border-radius: 4%;
+}
+
+.entrar-h1{
+  text-align: center;
+  margin-bottom: 20px;
+  color: #393939;
+}
+
+.label-float input{
+  width: 100%;
+  padding: 5px 5px;
+  display: inline-block;
+  border: 0;
+  border-bottom: 2px solid #393939;
+  background-color: transparent;
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  transition: all .3s ease-out;
+  border-radius: 0;
+  
+}
+
+.label-float{
+  position: relative;
+  padding-top: 13px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.label-float input:focus{
+  border-bottom: 2px solid #1b1b1b;
+}
+
+.label-float label{
+  color: #393939;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all .3s ease-out;
+}
+
+.label-float input:focus + label,
+.label-float input:valid + label{
+  font-size: 13px;
+  margin-top: 0;
+  color: #1b1b1b;
+}
+
+.button-enviar {
+  background-color: #008FFB;
+  border-color: #008FFB;
+  color: #FFFFFF;
+  padding: 7px;
+  font-weight: bold;
+  font-size: 12pt;
+  margin-top: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: all .4s ease-out;
+}
+
+.button-enviar:hover{
+  background-color: #1f7ac0;
+  border-color: #1f7ac0;
+  color: #FFFFFF;
+}
+
+.func-logar{
+  display: flex;
+  justify-content: center;
+}
+
+
+.fa-eye{
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  cursor: pointer;
+  color:  #FEFEFE;
+}
+
+/* End of Right login */
+
+#msgError{
+  text-align: center;
+  color: #ff0000;
+  background-color: #ffbbbb;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}
+
+
+

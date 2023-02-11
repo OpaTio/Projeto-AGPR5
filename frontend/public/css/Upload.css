@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: #F8F8F8;
+}
+
+
+#select-image {
+    display: block;
+    width: 100%;
+    position: relative;
+  
+    font-size: 20px;
+    font-weight: bolder;
+    color: #737380;
+  
+    border: none;
+    border-radius: 30px;
+    margin-top: 30px;
+
+    cursor: pointer;
+  }
+
+#photo-file {
+    display: none;
+}
+
+#photo-preview {
+    margin: 1px;
+    border-radius: 10px;
+    max-width: 460px;
+    max-height: 320px;
+}
+
+.div-Upload {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+button {
+    border: none;
+    
+}
+
+.Upload-Container {
+    display: flex;
+    border: dotted #008FFB 5px;
+    height: 50vh;
+    justify-content: center;
+    text-align: center;
+    margin-left: 450px;
+    margin-right: 450px;
+}
+
+.RC-Buttons {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.RegistCancel {
+
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}
+
+.RegistCancel a {
+    
+
+    background: #737380; 
+  
+    font-weight: bolder;
+    font-size: 20px;
+    color: #DBDCDD;
+  
+    border-radius: 1px;
+
+    padding: 12px 17px;
+    margin-left: 30px;
+    margin-top: 50px;
+    text-decoration: none;
+
+   
+
+}
+
+
+
+.RegistCancel a:hover {
+    background: #008FFB;
+}
+
+#download-icon {
+    display: flex;
+    align-items: center;
+    color: #008FFB;
+
+}
+

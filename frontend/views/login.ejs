@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="/css/login.css">
+  <title>Login AGPR5</title>
+
+
+
+</head>
+
+<body>
+
+
+
+  <form>
+
+
+
+    <div class="main-login">
+      <div class="left-login">
+        <img src="/images/background.jpg" class="background-left-login" alt="background">
+      </div>
+      <div class="right-login">
+        <div class="card-login">
+          <h1 class="entrar-h1">Entrar</h1>
+
+          <div class="label-float">
+            <input type="text" id="username" required />
+            <label for="username">Digite seu usuário</label>
+          </div>
+
+          <div class="label-float">
+            <input type="password" class="" id="password" required />
+            <label id="password-label" for="password">Digite sua senha</label>
+            <i class="fa fa-eye" onclick="verSenha()" aria-hidden="true"></i>
+          </div>
+
+          <div class="func-logar">
+            <button type="button" class="button-enviar" onclick="login()">Acessar a plataforma</button>
+          </div>
+
+
+        </div>
+
+
+
+      </div>
+    </div>
+
+  </form>
+
+
+
+  <script>
+
+    function verSenha() {
+
+      let inputSenha = document.querySelector('#senha')
+
+      if (inputSenha.getAttribute('type') == 'password') {
+        inputSenha.setAttribute('type', 'text')
+      } else {
+        inputSenha.setAttribute('type', 'password')
+      }
+    }
+
+
+    function login() {
+
+      var username = document.getElementById('username').value;
+      var password = document.getElementById('password').value;
+
+      if (username == "admin" && password == "admin") {
+        alert('Sucesso.');
+        window.location.href = "/"
+
+      } else {
+        alert('Usuário ou senha incorretos, tente novamente.');
+      }
+
+    }
+
+  </script>
+
+
+
+</body>
+
+</html>
